@@ -1,0 +1,22 @@
+running egg_info
+writing build/ball_tracking/ball_tracking.egg-info/PKG-INFO
+writing dependency_links to build/ball_tracking/ball_tracking.egg-info/dependency_links.txt
+writing entry points to build/ball_tracking/ball_tracking.egg-info/entry_points.txt
+writing requirements to build/ball_tracking/ball_tracking.egg-info/requires.txt
+writing top-level names to build/ball_tracking/ball_tracking.egg-info/top_level.txt
+reading manifest file 'build/ball_tracking/ball_tracking.egg-info/SOURCES.txt'
+writing manifest file 'build/ball_tracking/ball_tracking.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ball_tracking/ball_tracking_1.py -> /home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/build/lib/ball_tracking
+running install
+running install_lib
+copying /home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/build/lib/ball_tracking/ball_tracking_1.py -> /home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/python3.10/site-packages/ball_tracking
+byte-compiling /home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/python3.10/site-packages/ball_tracking/ball_tracking_1.py to ball_tracking_1.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/python3.10/site-packages/ball_tracking-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/ball_tracking/ball_tracking.egg-info to /home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/python3.10/site-packages/ball_tracking-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ball_box script to /home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/ball_tracking
+writing list of installed files to '/home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/install.log'

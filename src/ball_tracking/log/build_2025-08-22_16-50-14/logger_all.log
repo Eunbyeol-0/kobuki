@@ -1,0 +1,91 @@
+[0.088s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.088s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7418d9072110>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7418d91b8dc0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7418d91b8dc0>>, mixin_verb=('build',))
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.198s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/eunbyeol/kobuki_ws/src/ball_tracking'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.212s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'ball_tracking'
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.227s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/eunbyeol/kobuki_ws/src/ball_tracking/install
+[0.228s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 46 installed packages in /home/eunbyeol/kobuki_ws/install
+[0.229s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 423 installed packages in /opt/ros/humble
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'cmake_target' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'cmake_clean_first' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'cmake_force_configure' from command line to 'False'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'ament_cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.259s] Level 5:colcon.colcon_core.verb:set package 'ball_tracking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.259s] DEBUG:colcon.colcon_core.verb:Building package 'ball_tracking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking', 'merge_install': False, 'path': '/home/eunbyeol/kobuki_ws/src/ball_tracking', 'symlink_install': False, 'test_result_base': None}
+[0.260s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.261s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.261s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/eunbyeol/kobuki_ws/src/ball_tracking' with build type 'ament_python'
+[0.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracking', 'ament_prefix_path')
+[0.262s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/hook/ament_prefix_path.ps1'
+[0.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/hook/ament_prefix_path.dsv'
+[0.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/hook/ament_prefix_path.sh'
+[0.264s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.264s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.431s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/eunbyeol/kobuki_ws/src/ball_tracking'
+[0.431s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.431s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.663s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eunbyeol/kobuki_ws/src/ball_tracking': PYTHONPATH=/home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ball_tracking build --build-base /home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/build install --record /home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/install.log --single-version-externally-managed install_data
+[0.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eunbyeol/kobuki_ws/src/ball_tracking' returned '0': PYTHONPATH=/home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ball_tracking build --build-base /home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/build install --record /home/eunbyeol/kobuki_ws/src/ball_tracking/build/ball_tracking/install.log --single-version-externally-managed install_data
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking' for CMake module files
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking' for CMake config files
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/bin'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/pkgconfig/ball_tracking.pc'
+[0.846s] Level 1:colcon.colcon_core.environment:checking '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/lib/python3.10/site-packages'
+[0.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_tracking', 'pythonpath')
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/hook/pythonpath.ps1'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/hook/pythonpath.dsv'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/hook/pythonpath.sh'
+[0.847s] Level 1:colcon.colcon_core.environment:checking '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/bin'
+[0.847s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_tracking)
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/package.ps1'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/package.dsv'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/package.sh'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/package.bash'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/ball_tracking/package.zsh'
+[0.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eunbyeol/kobuki_ws/src/ball_tracking/install/ball_tracking/share/colcon-core/packages/ball_tracking)
+[0.849s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.849s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.849s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.849s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.855s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.855s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.855s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.863s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.863s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/local_setup.ps1'
+[0.864s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/_local_setup_util_ps1.py'
+[0.865s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/setup.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/local_setup.sh'
+[0.867s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/_local_setup_util_sh.py'
+[0.867s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/setup.sh'
+[0.869s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/local_setup.bash'
+[0.869s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/setup.bash'
+[0.870s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/local_setup.zsh'
+[0.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eunbyeol/kobuki_ws/src/ball_tracking/install/setup.zsh'
