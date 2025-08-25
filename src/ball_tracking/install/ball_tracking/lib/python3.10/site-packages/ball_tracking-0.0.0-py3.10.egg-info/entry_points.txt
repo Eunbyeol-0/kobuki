@@ -1,3 +1,0 @@
-[console_scripts]
-ball_box = ball_tracking.ball_tracking_2:main
-
