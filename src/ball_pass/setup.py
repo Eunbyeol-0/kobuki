@@ -22,6 +22,9 @@ setup(
         'console_scripts': [
             'pass_goal = ball_pass.pass_goal_node:main',
             'shoot_goal = ball_pass.shoot_goal_node:main',
+            'pass_perception = ball_pass.pass_perception_node:main',
+            'shoot_perception = ball_pass.shoot_perception_node:main',
+            'move = ball_pass.move_node:main',
             'kick = ball_pass.kick_node:main',
             'rotate = ball_pass.rotate_node:main',
         ],
