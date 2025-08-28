@@ -86,7 +86,7 @@ class CameraPointServo(Node):
         # last_point가 없거나 타임아웃 시 정지 -> last_yaw는 필요없나?
         if self.last_point is None or (now - self.last_stamp) > self.timeout_sec:
             twist.linear.x = 0.0
-            twist.angular.z = 0.5   # 원하는 회전 속도로 조정 (rad/s)
+            twist.angular.z = 0.25   # 원하는 회전 속도로 조정 (rad/s)
             self.cmd_pub.publish(twist)
             return
 
