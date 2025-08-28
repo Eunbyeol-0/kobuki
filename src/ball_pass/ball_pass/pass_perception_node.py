@@ -116,7 +116,8 @@ class YOLODetector(Node):
                     det_array.detections.append(
                         self.create_detection_msg(rgb_msg.header, team, score, center_x, center_y)
                     )
-                    if label == "person":
+                    obj_x = None
+                    if label == "person" and team == 'Blue': 
                     # 3D 위치 계산 및 발행
                         obj_x, obj_y, obj_z = self.publish_human_position(depth_image, rgb_msg.header, center_x, center_y)
                     elif label == "sports ball":

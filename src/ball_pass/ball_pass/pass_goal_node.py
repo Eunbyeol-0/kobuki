@@ -32,7 +32,7 @@ class PassGoalPublisher(Node):
         self.declare_parameter("target_frame", "camera_depth_optical_frame")
         self.declare_parameter("tf_timeout_sec", 0.1)
 
-        self.declare_parameter("d_kick", 0.4)
+        self.declare_parameter("d_kick", 0.40)
         self.declare_parameter("min_L", 1e-3)
         self.declare_parameter("min_L_for_kick", 0.10)
         self.declare_parameter("max_msg_age_sec", 0.5)

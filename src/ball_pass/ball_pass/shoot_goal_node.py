@@ -32,7 +32,7 @@ class ShootGoalPublisher(Node):
         self.declare_parameter("target_frame", "camera_depth_optical_frame")
         self.declare_parameter("tf_timeout_sec", 0.1)
 
-        self.declare_parameter("d_kick", 0.50)
+        self.declare_parameter("d_kick", 0.40)
         self.declare_parameter("min_L", 1e-3)
         self.declare_parameter("min_L_for_kick", 0.10)
         self.declare_parameter("max_msg_age_sec", 0.5)
@@ -160,6 +160,8 @@ class ShootGoalPublisher(Node):
         theta = math.atan2(ux, uz)
         quat = quat_about_y(theta)
 
+        if d_offset == 0.0:
+            quat = (0, 0, 0, 1)
         self._publish_goal_pose_xz(xg, zg, quat)
 
     def destroy_node(self):
