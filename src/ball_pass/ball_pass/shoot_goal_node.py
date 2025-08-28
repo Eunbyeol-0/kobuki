@@ -167,7 +167,7 @@ class ShootGoalPublisher(Node):
 
 def main():
     rclpy.init()
-    node = ShootGoalPublisher()  # 클래스명 변경
+    node = ShootGoalPublisher()  
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
