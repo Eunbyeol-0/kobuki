@@ -22,9 +22,9 @@ def quat_about_y(theta: float) -> Quaternion:
     return q
 
 
-class ShootGoalPublisher(Node):  # 클래스명 변경
+class ShootGoalPublisher(Node):  
     def __init__(self):
-        super().__init__("shoot_goal_publisher")  # 노드명 변경
+        super().__init__("shoot_goal_publisher")  
 
         self.declare_parameter("ball_topic", "/ball")
         self.declare_parameter("teammate_topic", "/cone")  
